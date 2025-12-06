@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kontakt - Marokkanisches Restaurant Leipzig. Dresdner Str. 24, 04317 Leipzig. Tel: +49 177 1357521. Öffnungszeiten: 11:00-22:00 Uhr.">
+    <title>Kontakt | Marokkanisches Restaurant Leipzig</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Marokkanisches Restaurant Leipzig</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">Über Uns</a></li>
+                <li><a href="menu.html" class="nav-link">Speisekarte</a></li>
+                <li><a href="gallery.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="hero-content">
+            <h1>Kontakt</h1>
+            <p class="hero-tagline">Wir freuen uns auf Ihren Besuch</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info reveal">
+                    <h2 class="text-red" style="margin-bottom: 2rem;">Kontaktinformationen</h2>
+
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Adresse</h4>
+                            <p>Dresdner Str. 24<br>04317 Leipzig, Germany</p>
+                            <p style="color: #1ABC9C; margin-top: 0.5rem;">89QW+H4 Leipzig</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+491771357521" style="color: #C1272D; font-weight: 600;">+49 177 1357521</a>
+                            </p>
+                            <a href="tel:+491771357521" class="btn btn-primary"
+                                style="margin-top: 0.5rem; padding: 0.6rem 1.5rem; font-size: 1rem;">Jetzt anrufen</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <h4>Öffnungszeiten</h4>
+                            <p><strong>Montag - Sonntag</strong></p>
+                            <p>11:00 - 22:00 Uhr</p>
+                            <p style="color: #1ABC9C; font-weight: 700; margin-top: 0.5rem;">✓ Jetzt geöffnet</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div class="info-content">
+                            <h4>Website</h4>
+                            <p><a href="https://marrakesch-restaurant-leipzig.de" target="_blank"
+                                    style="color: #C1272D;">marrakesch-restaurant-leipzig.de</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">⭐</div>
+                        <div class="info-content">
+                            <h4>Bewertung</h4>
+                            <p style="color: #D4AF37; font-size: 1.2rem;">★★★★★ 4.6</p>
+                            <p>824 Google Bewertungen</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="https://marrakesch-restaurant-leipzig.de" target="_blank" class="btn btn-gold"
+                            style="width: 100%; text-align: center;">
+                            Tisch reservieren
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form reveal">
+                    <h2 class="text-red" style="margin-bottom: 2rem;">Nachricht senden</h2>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="ihre.email@beispiel.de">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <input type="text" id="subject" name="subject" placeholder="Betreff Ihrer Nachricht">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nachricht *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Ihre Nachricht an uns..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Nachricht senden
+                        </button>
+                    </form>
+
+                    <p style="margin-top: 1rem; color: #757575; font-size: 0.9rem; text-align: center;">
+                        * Pflichtfelder
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Finden Sie uns</h2>
+                <p class="section-subtitle">Dresdner Str. 24, 04317 Leipzig</p>
+            </div>
+
+            <div class="map-container reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.123456789!2d12.4147!3d51.3389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIwJzIwLjAiTiAxMsKwMjQnNTMuMCJF!5e0!3m2!1sde!2sde!4v1234567890123!5m2!1sde!2sde"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Marokkanisches Restaurant Leipzig Standort">
+                </iframe>
+            </div>
+
+            <div class="text-center mt-2">
+                <a href="https://www.google.com/maps/place/Marokkanisches+Restaurant+Leipzig" target="_blank"
+                    class="btn btn-secondary">
+                    📍 In Google Maps öffnen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Wichtige Informationen</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card reveal text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🚗</div>
+                    <h3 class="card-title">Anfahrt</h3>
+                    <p class="card-description">
+                        Gut erreichbar mit öffentlichen Verkehrsmitteln und dem Auto.
+                        Parkplätze in der Nähe verfügbar.
+                    </p>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💶</div>
+                    <h3 class="card-title">Preise</h3>
+                    <p class="card-description">
+                        €10-20 pro Person<br>
+                        Faire Preise für authentische Qualität
+                    </p>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎉</div>
+                    <h3 class="card-title">Veranstaltungen</h3>
+                    <p class="card-description">
+                        Wir bieten auch Catering und Reservierungen für
+                        besondere Anlässe und Gruppen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title text-gold">Häufig gestellte Fragen</h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card reveal" style="margin-bottom: 1rem;">
+                    <h4 style="color: #C1272D; margin-bottom: 0.5rem;">Muss ich reservieren?</h4>
+                    <p style="color: #757575; margin: 0;">
+                        Eine Reservierung ist empfehlenswert, besonders an Wochenenden.
+                        Sie können telefonisch unter +49 177 1357521 oder online reservieren.
+                    </p>
+                </div>
+
+                <div class="card reveal" style="margin-bottom: 1rem;">
+                    <h4 style="color: #C1272D; margin-bottom: 0.5rem;">Bieten Sie vegetarische Optionen an?</h4>
+                    <p style="color: #757575; margin: 0;">
+                        Ja! Wir haben eine Auswahl an vegetarischen Tajines, Couscous und Salaten.
+                    </p>
+                </div>
+
+                <div class="card reveal" style="margin-bottom: 1rem;">
+                    <h4 style="color: #C1272D; margin-bottom: 0.5rem;">Gibt es Parkplätze?</h4>
+                    <p style="color: #757575; margin: 0;">
+                        Ja, es gibt Parkplätze in der Nähe des Restaurants.
+                    </p>
+                </div>
+
+                <div class="card reveal" style="margin-bottom: 1rem;">
+                    <h4 style="color: #C1272D; margin-bottom: 0.5rem;">Akzeptieren Sie Kartenzahlung?</h4>
+                    <p style="color: #757575; margin: 0;">
+                        Ja, wir akzeptieren Bargeld und alle gängigen Kreditkarten.
+                    </p>
+                </div>
+
+                <div class="card reveal">
+                    <h4 style="color: #C1272D; margin-bottom: 0.5rem;">Bieten Sie Lieferservice an?</h4>
+                    <p style="color: #757575; margin: 0;">
+                        Bitte kontaktieren Sie uns telefonisch für Informationen zu unserem Lieferservice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Marokkanisches Restaurant Leipzig Restaurant</h3>
+                <p>Authentische marokkanische Küche im Herzen von Leipzig</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="https://www.google.com/maps/place/Marokkanisches+Restaurant+Leipzig" target="_blank"
+                        class="social-link" aria-label="Google Maps">📍</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Öffnungszeiten</h3>
+                <p>Montag - Sonntag</p>
+                <p>11:00 - 22:00 Uhr</p>
+                <p style="color: #1ABC9C; font-weight: 700; margin-top: 0.5rem;">Jetzt geöffnet</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Dresdner Str. 24</p>
+                <p>04317 Leipzig, Germany</p>
+                <p><a href="tel:+491771357521">+49 177 1357521</a></p>
+                <p><a href="https://marrakesch-restaurant-leipzig.de"
+                        target="_blank">marrakesch-restaurant-leipzig.de</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">Über Uns</a>
+                <a href="menu.html">Speisekarte</a>
+                <a href="gallery.html">Galerie</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Marokkanisches Restaurant Leipzig. Alle Rechte vorbehalten.</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://www.google.com/maps/place/Marokkanisches+Restaurant+Leipzig" target="_blank"
+                    style="color: #D4AF37;">
+                    📍 Finden Sie uns auf Google Maps
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
