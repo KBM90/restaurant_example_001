@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Marokkanisches Restaurant Leipzig - Authentische marokkanische Küche in Leipzig. Genießen Sie Tajines, Couscous und traditionelle Gerichte. ⭐ 4.6 (824 Bewertungen)">
+        content="Restaurant Example - Authentic Moroccan Cuisine in Leipzig. Enjoy Tajines, Couscous and traditional dishes. ⭐ 4.6 (824 Reviews)" />
     <meta name="keywords"
-        content="Marokkanisches Restaurant, Leipzig, Tajine, Couscous, Marokkanische Küche, Restaurant Leipzig">
+        content="Restaurant Example, Leipzig, Tajine, Couscous, Moroccan Cuisine, Restaurant Leipzig" />
     <meta name="author" content="Marokkanisches Restaurant Leipzig">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Marokkanisches Restaurant Leipzig - Authentic Moroccan Cuisine">
-    <meta property="og:description" content="Authentische marokkanische Küche in Leipzig. ⭐ 4.6 (824 Bewertungen)">
+    <meta property="og:title" content="Restaurant Example - Authentic Moroccan Cuisine" />
+    <meta property="og:description" content="Authentic Moroccan cuisine in Leipzig. ⭐ 4.6 (824 Reviews)" />
     <meta property="og:url" content="https://marrakesch-restaurant-leipzig.de">
 
-    <!-- Schema.org markup for Google --><script type="application/ld+json">
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Restaurant",
-        "name": "Marokkanisches Restaurant Leipzig",
+        "name": "Restaurant Example",
         "image": "https://marrakesch-restaurant-leipzig.de/images/restaurant.jpg",
         "address": {
             "@type": "PostalAddress",
@@ -52,7 +53,7 @@
     }
     </script>
 
-    <title>Marokkanisches Restaurant Leipzig | Authentic Moroccan Cuisine</title>
+    <title>Restaurant Example | Authentic Moroccan Cuisine</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,13 +70,22 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Marokkanisches Restaurant Leipzig</a>
+            <a href="index.html" class="logo" data-i18n="business_name">Marokkanisches Restaurant Leipzig</a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">Über Uns</a></li>
-                <li><a href="menu.html" class="nav-link">Speisekarte</a></li>
-                <li><a href="gallery.html" class="nav-link">Galerie</a></li>
-                <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
+                <li><a href="menu.html" class="nav-link" data-i18n="nav_menu">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                <li>
+                    <select id="language-selector" class="language-selector">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -88,19 +98,19 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Marokkanisches Restaurant Leipzig</h1>
-            <p class="hero-tagline">Authentic Moroccan Cuisine in Leipzig</p>
+            <h1 data-i18n="hero_title">Marokkanisches Restaurant Leipzig</h1>
+            <p class="hero-tagline" data-i18n="hero_tagline">Authentic Moroccan Cuisine in Leipzig</p>
 
             <div class="rating">
                 <span class="stars">★★★★★</span>
-                <span>4.6 (824 Bewertungen)</span>
+                <span data-i18n="hero_rating">4.6 (824 Reviews)</span>
             </div>
 
             <div class="hero-buttons">
-                <a href="menu.html" class="btn btn-primary">Speisekarte ansehen</a>
-                <a href="https://marrakesch-restaurant-leipzig.de" target="_blank" class="btn btn-gold">Tisch
-                    reservieren</a>
-                <a href="contact.html" class="btn btn-secondary">Kontakt</a>
+                <a href="menu.html" class="btn btn-primary" data-i18n="hero_btn_menu">View Menu</a>
+                <a href="https://marrakesch-restaurant-leipzig.de" target="_blank" class="btn btn-gold"
+                    data-i18n="hero_btn_reserve">Reserve a Table</a>
+                <a href="contact.html" class="btn btn-secondary" data-i18n="hero_btn_contact">Contact</a>
             </div>
         </div>
     </section>
@@ -109,8 +119,9 @@
     <section class="section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Beliebte Gerichte</h2>
-                <p class="section-subtitle">Entdecken Sie unsere authentischen marokkanischen Spezialitäten</p>
+                <h2 class="section-title" data-i18n="section_popular_title">Popular Dishes</h2>
+                <p class="section-subtitle" data-i18n="section_popular_subtitle">Discover our authentic Moroccan
+                    specialties</p>
             </div>
 
             <div class="grid grid-3">
@@ -118,32 +129,35 @@
                     <div class="card-image"
                         style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%23C1272D%22 width=%22400%22 height=%22300%22/><circle fill=%22%23D4AF37%22 opacity=%220.3%22 cx=%22200%22 cy=%22150%22 r=%22100%22/><text x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22>Tajine</text></svg>'); background-size: cover; background-position: center;">
                     </div>
-                    <h3 class="card-title">Lamm Tajine</h3>
-                    <p class="card-description">Zartes Lammfleisch mit Pflaumen, Mandeln und traditionellen Gewürzen</p>
-                    <p class="card-price">€16.50</p>
+                    <h3 class="card-title" data-i18n="dish_tajine_title">Lamb Tajine</h3>
+                    <p class="card-description" data-i18n="dish_tajine_desc">Tender lamb with prunes, almonds and
+                        traditional spices</p>
+                    <p class="card-price" data-i18n="dish_tajine_price">€16.50</p>
                 </div>
 
                 <div class="card reveal">
                     <div class="card-image"
                         style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%23E67E22%22 width=%22400%22 height=%22300%22/><circle fill=%22%23D4AF37%22 opacity=%220.3%22 cx=%22200%22 cy=%22150%22 r=%22100%22/><text x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22>Couscous</text></svg>'); background-size: cover; background-position: center;">
                     </div>
-                    <h3 class="card-title">Royal Couscous</h3>
-                    <p class="card-description">Traditioneller Couscous mit Gemüse, Lamm, Huhn und Merguez</p>
-                    <p class="card-price">€18.90</p>
+                    <h3 class="card-title" data-i18n="dish_couscous_title">Royal Couscous</h3>
+                    <p class="card-description" data-i18n="dish_couscous_desc">Traditional couscous with vegetables,
+                        lamb, chicken and merguez</p>
+                    <p class="card-price" data-i18n="dish_couscous_price">€18.90</p>
                 </div>
 
                 <div class="card reveal">
                     <div class="card-image"
                         style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22><rect fill=%22%238B4513%22 width=%22400%22 height=%22300%22/><circle fill=%22%23D4AF37%22 opacity=%220.3%22 cx=%22200%22 cy=%22150%22 r=%22100%22/><text x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22>Grill</text></svg>'); background-size: cover; background-position: center;">
                     </div>
-                    <h3 class="card-title">Gemischte Grillplatte</h3>
-                    <p class="card-description">Köstliche Auswahl an gegrilltem Fleisch mit Reis und Salat</p>
-                    <p class="card-price">€19.50</p>
+                    <h3 class="card-title" data-i18n="dish_grill_title">Mixed Grill Platter</h3>
+                    <p class="card-description" data-i18n="dish_grill_desc">Delicious selection of grilled meats with
+                        rice and salad</p>
+                    <p class="card-price" data-i18n="dish_grill_price">€19.50</p>
                 </div>
             </div>
 
             <div class="text-center mt-2">
-                <a href="menu.html" class="btn btn-primary">Vollständige Speisekarte</a>
+                <a href="menu.html" class="btn btn-primary" data-i18n="btn_full_menu">Full Menu</a>
             </div>
         </div>
     </section>
@@ -153,18 +167,18 @@
         <div class="container">
             <div class="grid grid-2">
                 <div class="reveal">
-                    <h2 class="text-gold">Willkommen in unserem Restaurant</h2>
-                    <p style="color: #e0e0e0; font-size: 1.1rem; line-height: 1.8;">
-                        Erleben Sie die authentische marokkanische Küche im Herzen von Leipzig.
-                        Unser Restaurant bietet Ihnen eine kulinarische Reise durch Marokko mit
-                        traditionellen Gerichten, die mit Liebe und den besten Zutaten zubereitet werden.
+                    <h2 class="text-gold" data-i18n="about_welcome_title">Welcome to our Restaurant</h2>
+                    <p style="color: #e0e0e0; font-size: 1.1rem; line-height: 1.8;" data-i18n="about_welcome_p1">
+                        Experience authentic Moroccan cuisine in the heart of Leipzig.
+                        Our restaurant offers you a culinary journey through Morocco with
+                        traditional dishes prepared with love and the finest ingredients.
                     </p>
-                    <p style="color: #e0e0e0; font-size: 1.1rem; line-height: 1.8;">
-                        Von aromatischen Tajines bis hin zu köstlichem Couscous – jedes Gericht
-                        erzählt eine Geschichte und bringt die Wärme der marokkanischen Gastfreundschaft
-                        auf Ihren Tisch.
+                    <p style="color: #e0e0e0; font-size: 1.1rem; line-height: 1.8;" data-i18n="about_welcome_p2">
+                        From aromatic tajines to delicious couscous - each dish
+                        tells a story and brings the warmth of Moroccan hospitality
+                        to your table.
                     </p>
-                    <a href="about.html" class="btn btn-gold mt-1">Mehr über uns</a>
+                    <a href="about.html" class="btn btn-gold mt-1" data-i18n="about_btn_more">More About Us</a>
                 </div>
                 <div class="reveal">
                     <div
@@ -179,44 +193,44 @@
     <section class="section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Was unsere Gäste sagen</h2>
-                <p class="section-subtitle">Bewertungen von zufriedenen Kunden</p>
+                <h2 class="section-title" data-i18n="reviews_title">What Our Guests Say</h2>
+                <p class="section-subtitle" data-i18n="reviews_subtitle">Reviews from satisfied customers</p>
             </div>
 
             <div class="reviews-slider reveal">
                 <div class="review-card active">
-                    <p class="review-text">
-                        "Das beste marokkanische Restaurant in Leipzig! Die Tajine war unglaublich
-                        lecker und der Service war ausgezeichnet. Wir kommen definitiv wieder!"
+                    <p class="review-text" data-i18n="review1_text">
+                        "The best Moroccan restaurant in Leipzig! The tajine was incredibly
+                        delicious and the service was excellent. We will definitely come back!"
                     </p>
-                    <p class="review-author">— Sarah M.</p>
+                    <p class="review-author" data-i18n="review1_author">— Sarah M.</p>
                     <p class="review-rating">★★★★★</p>
                 </div>
 
                 <div class="review-card">
-                    <p class="review-text">
-                        "Authentische Küche, wunderbare Atmosphäre und sehr freundliches Personal.
-                        Der Couscous Royal war ein Traum. Absolut empfehlenswert!"
+                    <p class="review-text" data-i18n="review2_text">
+                        "Authentic cuisine, wonderful atmosphere and very friendly staff.
+                        The Royal Couscous was a dream. Absolutely recommended!"
                     </p>
-                    <p class="review-author">— Michael K.</p>
+                    <p class="review-author" data-i18n="review2_author">— Michael K.</p>
                     <p class="review-rating">★★★★★</p>
                 </div>
 
                 <div class="review-card">
-                    <p class="review-text">
-                        "Wir waren begeistert von der Qualität der Speisen und dem schönen Ambiente.
-                        Die Minztee-Zeremonie war ein besonderes Erlebnis!"
+                    <p class="review-text" data-i18n="review3_text">
+                        "We were delighted by the quality of the dishes and the beautiful ambiance.
+                        The mint tea ceremony was a special experience!"
                     </p>
-                    <p class="review-author">— Anna L.</p>
+                    <p class="review-author" data-i18n="review3_author">— Anna L.</p>
                     <p class="review-rating">★★★★★</p>
                 </div>
 
                 <div class="review-card">
-                    <p class="review-text">
-                        "Fantastisches Essen zu fairen Preisen. Die Gewürze sind perfekt abgestimmt
-                        und man schmeckt die Liebe zum Detail in jedem Gericht."
+                    <p class="review-text" data-i18n="review4_text">
+                        "Fantastic food at fair prices. The spices are perfectly balanced
+                        and you can taste the love for detail in every dish."
                     </p>
-                    <p class="review-author">— Thomas B.</p>
+                    <p class="review-author" data-i18n="review4_author">— Thomas B.</p>
                     <p class="review-rating">★★★★★</p>
                 </div>
 
@@ -234,16 +248,16 @@
     <section class="section bg-dark">
         <div class="container text-center">
             <div class="reveal">
-                <h2 class="text-gold" style="margin-bottom: 1rem;">Buchen Sie Ihren Tisch heute</h2>
-                <p
-                    style="color: #e0e0e0; font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-                    Erleben Sie einen unvergesslichen Abend mit authentischer marokkanischer Küche.
-                    Reservieren Sie jetzt Ihren Tisch und lassen Sie sich verwöhnen!
+                <h2 class="text-gold" style="margin-bottom: 1rem;" data-i18n="cta_title">Book Your Table Today</h2>
+                <p style="color: #e0e0e0; font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;"
+                    data-i18n="cta_text">
+                    Experience an unforgettable evening with authentic Moroccan cuisine.
+                    Reserve your table now and let yourself be pampered!
                 </p>
                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://marrakesch-restaurant-leipzig.de" target="_blank" class="btn btn-gold">Jetzt
-                        reservieren</a>
-                    <a href="tel:+491771357521" class="btn btn-secondary">📞 Anrufen</a>
+                    <a href="https://marrakesch-restaurant-leipzig.de" target="_blank" class="btn btn-gold"
+                        data-i18n="cta_btn_reserve">Reserve Now</a>
+                    <a href="tel:+491771357521" class="btn btn-secondary" data-i18n="cta_btn_call">📞 Call</a>
                 </div>
             </div>
         </div>
@@ -253,8 +267,8 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Marokkanisches Restaurant Leipzig Restaurant</h3>
-                <p>Authentische marokkanische Küche im Herzen von Leipzig</p>
+                <h3 data-i18n="business_name">Restaurant Example</h3>
+                <p data-i18n="footer_tagline">Authentic Moroccan cuisine in the heart of Leipzig</p>
                 <div class="social-links">
                     <a href="#" class="social-link" aria-label="Facebook">f</a>
                     <a href="#" class="social-link" aria-label="Instagram">📷</a>
@@ -264,14 +278,15 @@
             </div>
 
             <div class="footer-section">
-                <h3>Öffnungszeiten</h3>
-                <p>Montag - Sonntag</p>
-                <p>11:00 - 22:00 Uhr</p>
-                <p style="color: #1ABC9C; font-weight: 700; margin-top: 0.5rem;">Jetzt geöffnet</p>
+                <h3 data-i18n="footer_hours_title">Opening Hours</h3>
+                <p data-i18n="footer_hours_days">Monday - Sunday</p>
+                <p data-i18n="footer_hours_time">11:00 - 22:00</p>
+                <p style="color: #1ABC9C; font-weight: 700; margin-top: 0.5rem;" data-i18n="footer_hours_status">Open
+                    Now</p>
             </div>
 
             <div class="footer-section">
-                <h3>Kontakt</h3>
+                <h3 data-i18n="footer_contact_title">Contact</h3>
                 <p>Dresdner Str. 24</p>
                 <p>04317 Leipzig, Germany</p>
                 <p><a href="tel:+491771357521">+49 177 1357521</a></p>
@@ -280,38 +295,40 @@
             </div>
 
             <div class="footer-section">
-                <h3>Navigation</h3>
-                <a href="index.html">Home</a>
-                <a href="about.html">Über Uns</a>
-                <a href="menu.html">Speisekarte</a>
-                <a href="gallery.html">Galerie</a>
-                <a href="contact.html">Kontakt</a>
+                <h3 data-i18n="footer_nav_title">Navigation</h3>
+                <a href="index.html" data-i18n="nav_home">Home</a>
+                <a href="about.html" data-i18n="nav_about">About Us</a>
+                <a href="menu.html" data-i18n="nav_menu">Menu</a>
+                <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+                <a href="contact.html" data-i18n="nav_contact">Contact</a>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Marokkanisches Restaurant Leipzig. Alle Rechte vorbehalten.</p>
+            <p data-i18n="footer_copyright">&copy; 2024 Restaurant Example. All rights reserved.</p>
             <p style="margin-top: 0.5rem;">
                 <a href="https://www.google.com/maps/place/Marokkanisches+Restaurant+Leipzig" target="_blank"
-                    style="color: #D4AF37;">
-                    📍 Finden Sie uns auf Google Maps
+                    style="color: #D4AF37;" data-i18n="footer_maps_link">
+                    📍 Find us on Google Maps
                 </a>
             </p>
         </div>
     </footer>
 
-    <!-- JavaScript --><script src="js/main.js"></script>
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 
     <!-- Floating WhatsApp Button -->
-    <a href="#" onclick="event.preventDefault(); const url = encodeURIComponent(window.location.href); window.open('https://wa.me/212634864854?text=Hi!%20I%20want%20a%20website%20like%20this%20one!%20' + url, '_blank'); return false;" 
-       class="floating-whatsapp-btn" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Contact us on WhatsApp">
+    <a href="#"
+        onclick="event.preventDefault(); const url = encodeURIComponent(window.location.href); window.open('https://wa.me/212634864854?text=Hi!%20I%20want%20a%20website%20like%20this%20one!%20' + url, '_blank'); return false;"
+        class="floating-whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
         <svg viewBox="0 0 32 32" class="whatsapp-icon">
-            <path fill="currentColor" d="M16 0C7.164 0 0 7.164 0 16c0 2.825.736 5.479 2.014 7.792L0 32l8.408-2.014A15.926 15.926 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.547 0-4.96-.707-7.013-1.947l-.507-.293-5.227 1.253 1.253-5.227-.293-.507A13.253 13.253 0 012.667 16c0-7.36 5.973-13.333 13.333-13.333S29.333 8.64 29.333 16 23.36 29.333 16 29.333zm7.307-9.973c-.4-.2-2.373-1.173-2.747-1.307-.373-.133-.64-.2-.907.2-.267.4-1.04 1.307-1.28 1.573-.24.267-.48.293-.88.093-.4-.2-1.693-.627-3.227-2-.12-1.173-.453-1.973-.653-2.373-.2-.4-.013-.613.173-.813.187-.187.4-.48.6-.72.2-.24.267-.4.4-.667.133-.267.067-.493-.033-.693-.1-.2-.907-2.187-1.24-2.987-.32-.773-.653-.667-.907-.667-.24-.013-.507-.013-.773-.013s-.707.093-1.08.493c-.373.4-1.427 1.387-1.427 3.387s1.467 3.933 1.667 4.2c.2.267 2.827 4.32 6.853 6.053.96.413 1.707.667 2.293.853.96.307 1.84.267 2.533.16.773-.12 2.373-.973 2.707-1.907.333-.933.333-1.733.233-1.907-.1-.173-.373-.267-.773-.467z"/>
+            <path fill="currentColor"
+                d="M16 0C7.164 0 0 7.164 0 16c0 2.825.736 5.479 2.014 7.792L0 32l8.408-2.014A15.926 15.926 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.547 0-4.96-.707-7.013-1.947l-.507-.293-5.227 1.253 1.253-5.227-.293-.507A13.253 13.253 0 012.667 16c0-7.36 5.973-13.333 13.333-13.333S29.333 8.64 29.333 16 23.36 29.333 16 29.333zm7.307-9.973c-.4-.2-2.373-1.173-2.747-1.307-.373-.133-.64-.2-.907.2-.267.4-1.04 1.307-1.28 1.573-.24.267-.48.293-.88.093-.4-.2-1.693-.627-3.227-2-.12-1.173-.453-1.973-.653-2.373-.2-.4-.013-.613.173-.813.187-.187.4-.48.6-.72.2-.24.267-.4.4-.667.133-.267.067-.493-.033-.693-.1-.2-.907-2.187-1.24-2.987-.32-.773-.653-.667-.907-.667-.24-.013-.507-.013-.773-.013s-.707.093-1.08.493c-.373.4-1.427 1.387-1.427 3.387s1.467 3.933 1.667 4.2c.2.267 2.827 4.32 6.853 6.053.96.413 1.707.667 2.293.853.96.307 1.84.267 2.533.16.773-.12 2.373-.973 2.707-1.907.333-.933.333-1.733.233-1.907-.1-.173-.373-.267-.773-.467z" />
         </svg>
-        <span class="whatsapp-text">I want like this website</span>
+        <span class="whatsapp-text" data-i18n="whatsapp_text">I want a website like this</span>
     </a>
 
 </body>

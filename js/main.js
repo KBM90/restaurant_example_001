@@ -311,6 +311,86 @@ backToTopButton.addEventListener('click', () => {
     });
 });
 
+// === MULTILINGUAL SUPPORT ===
+let currentLanguage = localStorage.getItem('language') || 'en';
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+
+    // Handle RTL for Arabic
+    if (lang === 'ar') {
+        document.documentElement.dir = 'rtl';
+        document.body.classList.add('rtl');
+    } else {
+        document.documentElement.dir = 'ltr';
+        document.body.classList.remove('rtl');
+    }
+
+    // Update all translatable elements
+    updateContent();
+
+    // Update language selector
+    updateLanguageSelector();
+}
+
+function updateContent() {
+    if (typeof translations === 'undefined' || !translations[currentLanguage]) {
+        console.warn('Translations not loaded or language not found');
+        return;
+    }
+
+    const trans = translations[currentLanguage];
+
+    // Update all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (trans[key]) {
+            // Check if element has placeholder attribute
+            if (element.hasAttribute('placeholder')) {
+                element.placeholder = trans[key];
+            } else {
+                element.textContent = trans[key];
+            }
+        }
+    });
+
+    // Update meta description if on index page
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && trans.meta_description) {
+        metaDesc.content = trans.meta_description;
+    }
+
+    // Update page title
+    const titleElement = document.querySelector('title');
+    if (titleElement && trans.page_title) {
+        titleElement.textContent = trans.page_title;
+    }
+}
+
+function updateLanguageSelector() {
+    const selector = document.getElementById('language-selector');
+    if (selector) {
+        selector.value = currentLanguage;
+    }
+}
+
+// Language selector change event
+document.addEventListener('DOMContentLoaded', () => {
+    const selector = document.getElementById('language-selector');
+    if (selector) {
+        selector.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+    }
+
+    // Initialize language on page load
+    setLanguage(currentLanguage);
+});
+
 // === CONSOLE LOG ===
-console.log('%c🍽️ Marokkanisches Restaurant Leipzig', 'color: #D4AF37; font-size: 20px; font-weight: bold;');
+console.log('%c🍽️ Restaurant Example', 'color: #D4AF37; font-size: 20px; font-weight: bold;');
 console.log('%cWebsite loaded successfully!', 'color: #1ABC9C; font-size: 14px;');
