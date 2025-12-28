@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Speisekarte - Marokkanisches Restaurant Leipzig. Entdecken Sie unsere authentischen Tajines, Couscous, Grillgerichte und traditionelle marokkanische Spezialitäten.">
-    <title>Speisekarte | Marokkanisches Restaurant Leipzig</title>
+    <title data-i18n="menu_page_title">Our Menu | Restaurant Example</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,22 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Marokkanisches Restaurant Leipzig</a>
+            <a href="index.html" class="logo" data-i18n="business_name">Restaurant Example</a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">Über Uns</a></li>
-                <li><a href="menu.html" class="nav-link">Speisekarte</a></li>
-                <li><a href="gallery.html" class="nav-link">Galerie</a></li>
-                <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
+                <li><a href="menu.html" class="nav-link" data-i18n="nav_menu">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                <li>
+                    <select id="language-selector" class="language-selector">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -42,9 +51,10 @@
     <!-- Page Header -->
     <section class="hero" style="height: 50vh; min-height: 400px;">
         <div class="hero-content">
-            <h1>Unsere Speisekarte</h1>
-            <p class="hero-tagline">Authentische marokkanische Spezialitäten</p>
-            <p style="color: #D4AF37; font-size: 1.3rem; margin-top: 1rem;">€10-20 pro Person</p>
+            <h1 data-i18n="menu_page_title">Our Menu</h1>
+            <p class="hero-tagline" data-i18n="menu_page_subtitle">Authentic Moroccan specialties</p>
+            <p style="color: #D4AF37; font-size: 1.3rem; margin-top: 1rem;" data-i18n="menu_page_price_range">€10-20 per
+                person</p>
         </div>
     </section>
 
@@ -385,13 +395,13 @@
     <section class="section bg-dark">
         <div class="container text-center">
             <div class="reveal">
-                <h2 class="text-gold" style="margin-bottom: 1rem;">Bereit zu bestellen?</h2>
-                <p style="color: #e0e0e0; font-size: 1.2rem; margin-bottom: 2rem;">
-                    Reservieren Sie jetzt Ihren Tisch und genießen Sie authentische marokkanische Küche!
+                <h2 class="text-gold" style="margin-bottom: 1rem;" data-i18n="menu_cta_title">Ready to order?</h2>
+                <p style="color: #e0e0e0; font-size: 1.2rem; margin-bottom: 2rem;" data-i18n="menu_cta_text">
+                    Reserve your table now and enjoy authentic Moroccan cuisine!
                 </p>
                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://marrakesch-restaurant-leipzig.de" target="_blank" class="btn btn-gold">Jetzt
-                        reservieren</a>
+                    <a href="https://marrakesch-restaurant-leipzig.de" target="_blank" class="btn btn-gold"
+                        data-i18n="cta_btn_reserve">Reserve Now</a>
                     <a href="tel:+491771357521" class="btn btn-secondary">📞 +49 177 1357521</a>
                 </div>
             </div>
@@ -402,8 +412,8 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Marokkanisches Restaurant Leipzig Restaurant</h3>
-                <p>Authentische marokkanische Küche im Herzen von Leipzig</p>
+                <h3 data-i18n="business_name">Restaurant Example</h3>
+                <p data-i18n="footer_tagline">Authentic Moroccan cuisine in the heart of Leipzig</p>
                 <div class="social-links">
                     <a href="#" class="social-link" aria-label="Facebook">f</a>
                     <a href="#" class="social-link" aria-label="Instagram">📷</a>
@@ -413,14 +423,15 @@
             </div>
 
             <div class="footer-section">
-                <h3>Öffnungszeiten</h3>
-                <p>Montag - Sonntag</p>
-                <p>11:00 - 22:00 Uhr</p>
-                <p style="color: #1ABC9C; font-weight: 700; margin-top: 0.5rem;">Jetzt geöffnet</p>
+                <h3 data-i18n="footer_hours_title">Opening Hours</h3>
+                <p data-i18n="footer_hours_days">Monday - Sunday</p>
+                <p data-i18n="footer_hours_time">11:00 - 22:00</p>
+                <p style="color: #1ABC9C; font-weight: 700; margin-top: 0.5rem;" data-i18n="footer_hours_status">Open
+                    Now</p>
             </div>
 
             <div class="footer-section">
-                <h3>Kontakt</h3>
+                <h3 data-i18n="footer_contact_title">Contact</h3>
                 <p>Dresdner Str. 24</p>
                 <p>04317 Leipzig, Germany</p>
                 <p><a href="tel:+491771357521">+49 177 1357521</a></p>
@@ -429,28 +440,58 @@
             </div>
 
             <div class="footer-section">
-                <h3>Navigation</h3>
-                <a href="index.html">Home</a>
-                <a href="about.html">Über Uns</a>
-                <a href="menu.html">Speisekarte</a>
-                <a href="gallery.html">Galerie</a>
-                <a href="contact.html">Kontakt</a>
+                <h3 data-i18n="footer_nav_title">Navigation</h3>
+                <a href="index.html" data-i18n="nav_home">Home</a>
+                <a href="about.html" data-i18n="nav_about">About Us</a>
+                <a href="menu.html" data-i18n="nav_menu">Menu</a>
+                <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+                <a href="contact.html" data-i18n="nav_contact">Contact</a>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Marokkanisches Restaurant Leipzig. Alle Rechte vorbehalten.</p>
+            <p data-i18n="footer_copyright">&copy; 2024 Restaurant Example. All rights reserved.</p>
             <p style="margin-top: 0.5rem;">
                 <a href="https://www.google.com/maps/place/Marokkanisches+Restaurant+Leipzig" target="_blank"
-                    style="color: #D4AF37;">
-                    📍 Finden Sie uns auf Google Maps
+                    style="color: #D4AF37;" data-i18n="footer_maps_link">
+                    📍 Find us on Google Maps
                 </a>
             </p>
         </div>
     </footer>
 
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+    <!-- Order Functionality -->
+    <script src="js/order.js"></script>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="order-modal">
+        <div class="order-modal-content">
+            <div class="order-modal-header">
+                <h3 class="order-modal-title" data-i18n="order_modal_title">Order</h3>
+                <button class="order-modal-close" onclick="closeOrderModal()">&times;</button>
+            </div>
+            <div class="order-modal-body">
+                <div class="order-form-group">
+                    <label class="order-form-label" data-i18n="order_dish_label">Dish</label>
+                    <div id="orderDishName" class="order-dish-name"></div>
+                </div>
+                <div class="order-form-group">
+                    <label class="order-form-label" data-i18n="order_quantity_label">Quantity</label>
+                    <input type="number" id="orderQuantity" class="order-form-input" min="1" value="1">
+                </div>
+            </div>
+            <div class="order-modal-footer">
+                <button class="order-btn order-btn-cancel" onclick="closeOrderModal()"
+                    data-i18n="order_btn_cancel">Cancel</button>
+                <button class="order-btn order-btn-submit" onclick="submitOrder()" data-i18n="order_btn_submit">Order
+                    via WhatsApp</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

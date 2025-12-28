@@ -80,6 +80,21 @@ const translations = {
         footer_copyright: "© 2024 Restaurant Example. Tous droits réservés.",
         footer_maps_link: "📍 Trouvez-nous sur Google Maps",
 
+        // Menu Page
+        menu_page_title: "Notre Menu",
+        menu_page_subtitle: "Spécialités marocaines authentiques",
+        menu_page_price_range: "€10-20 par personne",
+        menu_cta_title: "Prêt à commander ?",
+        menu_cta_text: "Réservez votre table maintenant et savourez une cuisine marocaine authentique !",
+
+        // Order Modal
+        order_modal_title: "Commander",
+        order_dish_label: "Plat",
+        order_quantity_label: "Quantité",
+        order_btn_submit: "Commander via WhatsApp",
+        order_btn_cancel: "Annuler",
+        order_btn_order: "Commander",
+
         // WhatsApp Button
         whatsapp_text: "Je veux un site comme celui-ci"
     },
@@ -159,6 +174,21 @@ const translations = {
         footer_nav_title: "التنقل",
         footer_copyright: "© 2024 مطعم مثال. جميع الحقوق محفوظة.",
         footer_maps_link: "📍 اعثر علينا على خرائط جوجل",
+
+        // Menu Page
+        menu_page_title: "قائمتنا",
+        menu_page_subtitle: "تخصصات مغربية أصيلة",
+        menu_page_price_range: "€10-20 للشخص",
+        menu_cta_title: "هل أنت مستعد للطلب؟",
+        menu_cta_text: "احجز طاولتك الآن واستمتع بالمطبخ المغربي الأصيل!",
+
+        // Order Modal
+        order_modal_title: "اطلب",
+        order_dish_label: "الطبق",
+        order_quantity_label: "الكمية",
+        order_btn_submit: "اطلب عبر واتساب",
+        order_btn_cancel: "إلغاء",
+        order_btn_order: "اطلب",
 
         // WhatsApp Button
         whatsapp_text: "أريد موقعاً مثل هذا"
@@ -240,6 +270,21 @@ const translations = {
         footer_copyright: "© 2024 Restaurant Example. All rights reserved.",
         footer_maps_link: "📍 Find us on Google Maps",
 
+        // Menu Page
+        menu_page_title: "Our Menu",
+        menu_page_subtitle: "Authentic Moroccan specialties",
+        menu_page_price_range: "€10-20 per person",
+        menu_cta_title: "Ready to order?",
+        menu_cta_text: "Reserve your table now and enjoy authentic Moroccan cuisine!",
+
+        // Order Modal
+        order_modal_title: "Order",
+        order_dish_label: "Dish",
+        order_quantity_label: "Quantity",
+        order_btn_submit: "Order via WhatsApp",
+        order_btn_cancel: "Cancel",
+        order_btn_order: "Order",
+
         // WhatsApp Button
         whatsapp_text: "I want a website like this"
     },
@@ -320,6 +365,21 @@ const translations = {
         footer_copyright: "© 2024 Restaurante Ejemplo. Todos los derechos reservados.",
         footer_maps_link: "📍 Encuéntranos en Google Maps",
 
+        // Menu Page
+        menu_page_title: "Nuestro Menú",
+        menu_page_subtitle: "Especialidades marroquíes auténticas",
+        menu_page_price_range: "€10-20 por persona",
+        menu_cta_title: "¿Listo para ordenar?",
+        menu_cta_text: "¡Reserva tu mesa ahora y disfruta de la auténtica cocina marroquí!",
+
+        // Order Modal
+        order_modal_title: "Ordenar",
+        order_dish_label: "Plato",
+        order_quantity_label: "Cantidad",
+        order_btn_submit: "Ordenar vía WhatsApp",
+        order_btn_cancel: "Cancelar",
+        order_btn_order: "Ordenar",
+
         // WhatsApp Button
         whatsapp_text: "Quiero un sitio web como este"
     },
@@ -399,6 +459,21 @@ const translations = {
         footer_nav_title: "Navigation",
         footer_copyright: "© 2024 Restaurant Beispiel. Alle Rechte vorbehalten.",
         footer_maps_link: "📍 Finden Sie uns auf Google Maps",
+
+        // Menu Page
+        menu_page_title: "Unsere Speisekarte",
+        menu_page_subtitle: "Authentische marokkanische Spezialitäten",
+        menu_page_price_range: "€10-20 pro Person",
+        menu_cta_title: "Bereit zu bestellen?",
+        menu_cta_text: "Reservieren Sie jetzt Ihren Tisch und genießen Sie authentische marokkanische Küche!",
+
+        // Order Modal
+        order_modal_title: "Bestellen",
+        order_dish_label: "Gericht",
+        order_quantity_label: "Menge",
+        order_btn_submit: "Über WhatsApp bestellen",
+        order_btn_cancel: "Abbrechen",
+        order_btn_order: "Bestellen",
 
         // WhatsApp Button
         whatsapp_text: "Ich möchte eine Website wie diese"

@@ -1135,3 +1135,212 @@ html[dir="rtl"] .contact-grid {
         transform: rotate(45deg) translate(7px, 7px);
     }
 }
+
+/* === ORDER MODAL === */
+.order-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.order-modal.active {
+    display: flex;
+}
+
+.order-modal-content {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    max-width: 500px;
+    width: 90%;
+    box-shadow: var(--shadow-xl);
+    animation: slideUp 0.3s ease;
+    position: relative;
+}
+
+.order-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--primary-gold);
+}
+
+.order-modal-title {
+    font-size: 1.8rem;
+    color: var(--primary-red);
+    margin: 0;
+}
+
+.order-modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--gray-medium);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-modal-close:hover {
+    color: var(--primary-red);
+    transform: rotate(90deg);
+}
+
+.order-modal-body {
+    margin-bottom: var(--spacing-md);
+}
+
+.order-form-group {
+    margin-bottom: var(--spacing-sm);
+}
+
+.order-form-label {
+    display: block;
+    font-weight: 600;
+    color: var(--dark-bg);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.order-form-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--gray-light);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.order-form-input:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.order-form-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.order-form-input[type="number"]::-webkit-outer-spin-button,
+.order-form-input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.order-dish-name {
+    font-size: 1.1rem;
+    color: var(--gray-dark);
+    padding: 0.8rem;
+    background: var(--light-bg);
+    border-radius: var(--radius-sm);
+}
+
+.order-modal-footer {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: flex-end;
+}
+
+.order-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    border: none;
+    font-size: 1rem;
+}
+
+.order-btn-submit {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: var(--white);
+}
+
+.order-btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.order-btn-cancel {
+    background: var(--gray-light);
+    color: var(--gray-dark);
+}
+
+.order-btn-cancel:hover {
+    background: var(--gray-medium);
+    color: var(--white);
+}
+
+/* Order Button on Menu Items */
+.menu-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item-order-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--gradient-gold);
+    color: var(--dark-bg);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-normal);
+    border: none;
+    cursor: pointer;
+}
+
+.menu-item-order-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* RTL Support for Modal */
+html[dir="rtl"] .order-modal-header {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .order-modal-footer {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .order-form-label {
+    text-align: right;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .order-modal-content {
+        width: 95%;
+        padding: var(--spacing-sm);
+    }
+
+    .order-modal-title {
+        font-size: 1.5rem;
+    }
+
+    .order-modal-footer {
+        flex-direction: column;
+    }
+
+    .order-btn {
+        width: 100%;
+    }
+}
